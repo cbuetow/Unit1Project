@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mario's Pizza</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+<body>
+<header>
+    <h1><i>Mario's <img src="Mario%2527s_Hat.png" alt="Mario hat" width="166.5" height="75.5"> Pizzeria</i> </h1> <br>
+</header>
+<div class="container">
+    <nav>
+        <ul id="tabs" class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#pizza-choice" class="nav-link">Make Pizza</a>
+            </li>
+            <li class="nav-item">
+                <a href="#delivery" class="nav-link">Delivery Info</a>
+            </li>
+            <li class="nav-item">
+                <a href="#order-confirm" class="nav-link">Confirm Order</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="tab-content">
+        <div id="pizza-choice" class="tab-pane active">
+    <form>
+    <h2>Choose pizza details</h2>
+    <fieldset>
+        <fieldset> <legend><h3>Size</h3></legend>
+            <input type = "radio"
+                   name = "size"
+                   id = "Small"
+                   value = "size"
+                   data-price="7"/>
+            <label for="Small">Small - $7.00</label><br>
+
+            <input type = "radio"
+                   name = "size"
+                   id = "Medium"
+                   value = "size"
+                   data-price="9"/>
+            <label for="Medium">Medium - $9.00</label> <br>
+
+            <input type = "radio"
+                   name = "size"
+                   id = "Large"
+                   value = "size"
+                   data-price="12" />
+            <label for = "Large">Large $12.00</label>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Crust</h3></legend>
+            <input type = "radio"
+                   name = "crust"
+                   id = "Thin"
+                   value = "crust" />
+            <label for="Thin">Thin</label><br>
+
+            <input type = "radio"
+                   name = "crust"
+                   id = "Pan"
+                   value = "crust" />
+            <label for="Pan">Pan</label> <br>
+
+            <input type = "radio"
+                   name = "Crust"
+                   id = "glutenFree"
+                   value = "Crust" />
+            <label for = "glutenFree">Gluten-Free</label>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Meats ($1.50 each)</h3></legend>
+            <input type = "checkbox"
+                   name = "meat"
+                   id = "Sausage"
+                   value = "meat"
+                   data-price="1.5" />
+            <label for="Sausage">Sausage</label><br>
+
+            <input type = "checkbox"
+                   name = "meat"
+                   id = "Pepperoni"
+                   value = "meat"
+                   data-price="1.5" />
+            <label for="Pepperoni">Pepperoni</label><br>
+
+            <input type = "checkbox"
+                   name = "meat"
+                   id = "Grilled Chicken"
+                   value = "meat"
+                   data-price="1.5" />
+            <label for="Grilled Chicken">Grilled Chicken</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Veggies ($1.00 each)</h3></legend>
+            <input type = "checkbox"
+                   name = "veggies"
+                   id = "Black Olives"
+                   value = "veggies"
+                   data-price="1" />
+            <label for="Black Olives">Black Olives</label><br>
+
+            <input type = "checkbox"
+                   name = "veggies"
+                   id = "Mushrooms"
+                   value = "veggies"
+                   data-price="1" />
+            <label for="Mushrooms">Mushrooms</label><br>
+
+            <input type = "checkbox"
+                   name = "meat"
+                   id = "Green Pepper"
+                   value = "meat"
+                   data-price="1" />
+            <label for="Green Pepper">Green Pepper</label><br>
+
+            <input type = "checkbox"
+                   name = "veggies"
+                   id = "Onion"
+                   value = "veggies"
+                   data-price="1" />
+            <label for="Onion">Onion</label><br>
+        </fieldset>
+
+    </fieldset>
+    </form>
+        </div>
+    <div id="delivery" class="tab-pane">
+<h2>Enter delivery information</h2>
+<fieldset>
+    <form>
+        <label for="pizza-name">Name (first and last): </label>
+        <input id="pizza-name" name="name" type="text" required> <br> <br>
+
+        <label for="pizza-address">Address: </label>
+        <input id="pizza-address" name="address" type="text" required> <br> <br>
+
+        <label for="pizza-myPhone">Phone: </label>
+        <input id="pizza-myPhone" name="myPhone" type="tel" required> <br> <br>
+
+        <button>Order Now!</button>
+    </form>
+</fieldset>
+    </div>
+    <div id="order-confirm" class="tab-pane">
+<h2>Order Confirmation</h2>
+<fieldset>
+    <table>
+        <tr>
+            <td id="nameOutput"></td>
+        </tr>
+        <tr>
+            <td id="addressOutput"></td>
+        </tr>
+        <tr>
+            <td id="myPhoneOutput"></td>
+        </tr>
+        <tr>
+            <td id="sizeOutput"></td>
+        </tr>
+        <tr>
+            <td id="crustOutput"></td>
+        </tr>
+        <tr>
+            <td id="meatOutput"></td>
+        </tr>
+        <tr>
+            <td id="veggieOutput"></td>
+        </tr>
+        <tr>
+            <td>Order Subtotal:</td>
+            <td id="orderSubtotal"></td>
+        </tr>
+        <tr>
+            <td>Tax:</td>
+            <td id="tax"></td>
+        </tr>
+        <tr>
+            <td>Delivery Fee:</td>
+            <td id="deliveryFee">$2.00</td>
+        </tr>
+
+        <tr>
+            <td>Order Total:</td>
+            <td id="grandTotalOutput"></td>
+        </tr>
+    </table>
+</fieldset>
+    </div>
+    </div>
+</div>
+</body>
+<footer>
+    Copyright &copy 2021 Mario's Pizzeria<br>
+    Created by Christopher Buetow
+</footer>
+</html>

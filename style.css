@@ -1,0 +1,61 @@
+body {
+    font-family: "Gill Sans MT", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3em;
+    color: tan;
+    font-family: "Times New Roman", sans-serif;
+}
+
+h3 {
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-left: 0.5em;
+    font-family: "Bodoni MT", sans-serif;
+    font-style: italic;
+}
+
+input {
+    margin-left: 3em;
+}
+
+label {
+    font-family: "Times New Roman", sans-serif;
+    font-style: inherit;
+}
+
+td {
+    font-family: "Times New Roman", sans-serif;
+}
+
+footer {
+    background-color: black;
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    color: tan;
+    padding: 1em;
+}
+
+.container {
+    min-width: 550px;
+    max-width: 1280px;
+}
+
+fieldset {
+    color: green;
+    background-color: tan;
+}
+
+legend {
+    color: red;
+}
+
+label {
+    font-size: large;
+}
